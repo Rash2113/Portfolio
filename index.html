@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="port.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio</h1>
+    </header>
+
+    <section>
+      <div class="hero">
+        <h2>Hi!!!! My self</h2>
+        <h2>Rashendra Goriwale</h2>
+        <p>
+          I'm
+          <span
+            id="changing-text"
+            class="typewrite"
+            data-words='["Fresher", "Developer", "Learner"]'
+            data-speed="100"
+            data-delay="1500"
+            data-loop="yes"
+          ></span>
+        </p>
+        <button class="btn-hire" onclick="hireMe()">Hire Me</button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-text">
+        <h3>About Me</h3>
+        <p>
+          My self Rashendra Goriwale. I have completed a degree in BScIT from
+          D.G. Ruparel College and pass out in 2023. I have done with Java Full
+          Stack Course. My short term goals is to gain the valuable experience
+          and establish strong relationships with the team member. My long term
+          goals is to aspire to transition into a leadership position where I
+          can mentor other and contribute to company.
+        </p>
+        <button class="btn-resume" onclick="viewResume()">Resume</button>
+      </div>
+      <div class="about-image">
+        <img src="image 2-Photoroom.png" alt="Rashendra Goriwale" />
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="tab-box">
+          <button class="tab-btn active">Education</button>
+          <button class="tab-btn">Skills</button>
+          <button class="tab-btn">Project</button>
+          <div class="line"></div>
+        </div>
+
+        <div class="content-box">
+          <!-- Education Content -->
+          <div class="content active">
+            <h2>Education</h2>
+            <div class="education-box">
+              <div class="education-item">
+                <h3>Bachelor's Degree</h3>
+                <span>Year: 2020-23</span>
+                <span>University: Mumbai University</span>
+                <span>
+                  College: D.G Ruparel College of Arts, Science and
+                  Commerce</span
+                >
+                <span>SGPI: 7.47/10</span>
+              </div>
+              <div class="education-item">
+                <h3>HSC</h3>
+                <span>Year: 2019-20</span>
+                <span>University: Maharashtra Board</span>
+                <span> College: Bhavans HS College</span>
+                <span>Percentage: 71%</span>
+              </div>
+              <div class="education-item">
+                <h3>SSC</h3>
+                <span>Year: 2017-18 </span>
+                <span>University: Maharashtra Board</span>
+                <span> College: Indian Education Society</span>
+                <span>Percentage: 73%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Content -->
+          <div class="content">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <span>Java/OOPs</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>JDBC</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Servlet & JSP</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Hibernate</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Spring Framework</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>SQL</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>HTML & CSS</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Content -->
+          <div class="content">
+            <h2>Project</h2>
+            <div class="project-box">
+              <div class="project-item">
+                <h3>Employee Management System (Spring MVC)</h3>
+                <p>
+                  Created a web app with employee CRUD operations, manager
+                  registration, and email notifications. Utilized PostgreSQL,
+                  Hibernate, and JavaMailSender.
+                </p>
+              </div>
+              <div class="project-item">
+                <h3>Photography Website</h3>
+                <p>
+                  Built a final-year project based on personal photography
+                  experience to address user pain points.
+                </p>
+              </div>
+              <div class="project-item">
+                <h3>Counselling Management System (Spring Boot)</h3>
+                <p>
+                  Designed a robust backend for counsellor registration, enquiry
+                  processing, and role-based access. Integrated pagination,
+                  filtering, and custom exception handling.
+                </p>
+              </div>
+              <div class="project-item">
+                <h3>Presentation Management System (Spring Boot)</h3>
+                <p>
+                  Developed role-based access control for Admin and Student
+                  users. Features include user registration, login, and status
+                  management using REST APIs and JPA/Hibernate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <p>Contact me</p>
+          <p>Email: Rashendra.g@gmail.com</p>
+          <p>Phone: +91 99873 30714</p>
+          <p>Address: Mumbai (Charni Road)</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/rashendra-gorivale-a17705283/">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/Rash2113"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-envelope-at-fill"></i></a>
+        </div>
+      </div>
+      <p class="copy">&copy; 2023 Rashendra Goriwale</p>
+    </footer>
+    <i class="bi bi-arrow-down-circle-fill scroll-arrow" id="scrollArrow"></i>
+    <script src="port.js"></script>
+  </body>
+</html>
